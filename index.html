@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Página Web Responsiva</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header class="bg-primary text-white p-4">
+      <div class="container">
+        <h1>Minha Página Web</h1>
+        <nav class="nav">
+          <a class="nav-link text-white" href="#">Início</a>
+          <a class="nav-link text-white" href="#">Sobre</a>
+          <a class="nav-link text-white" href="#">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="py-5">
+      <div class="container">
+        <section class="mb-5">
+          <h2><i class="fas fa-info-circle"></i> Seção 1</h2>
+          <p>
+            Esta é a primeira seção da minha página, utilizando containers do
+            Bootstrap para um layout responsivo.
+          </p>
+        </section>
+
+        <section class="mb-5">
+          <h2>Seção 2</h2>
+          <p>
+            Esta é a segunda seção. O Bootstrap facilita a criação de páginas
+            responsivas e bem estruturadas.
+          </p>
+        </section>
+        <section id="contato" class="mb-5">
+          <h2><i class="fas fa-envelope"></i> Contato</h2>
+          <form>
+            <div class="form-group">
+              <label for="nomeContato">Nome</label>
+              <input type="text" class="form-control" id="nomeContato" />
+            </div>
+            <div class="form-group">
+              <label for="emailContato">Email</label>
+              <input type="email" class="form-control" id="emailContato" />
+            </div>
+            <div class="form-group">
+              <label for="mensagemContato">Mensagem</label>
+              <textarea
+                class="form-control"
+                id="mensagemContato"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </section>
+      </div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://via.placeholder.com/800x400?text=Primeira+Imagem"
+              class="d-block w-100"
+              alt="Primeira Imagem"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://via.placeholder.com/800x400?text=Segunda+Imagem"
+              class="d-block w-100"
+              alt="Segunda Imagem"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://via.placeholder.com/800x400?text=Terceira+Imagem"
+              class="d-block w-100"
+              alt="Terceira Imagem"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white p-4">
+      <div class="container text-center">&copy; 2024 - Direitos Reservados</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
+<style>
+  body {
+    font-family: "Arial", sans-serif;
+  }
+
+  .carousel-item img {
+    height: 65vh;
+    object-fit: cover;
+  }
+
+  header,
+  footer {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  section {
+    padding: 20px 0;
+  }
+</style>
